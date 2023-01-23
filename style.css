@@ -1,0 +1,697 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sans-serif";
+}
+
+.header {
+    background-color: black;
+    height: 40rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.myBtn {
+    background: transparent;
+    color: #cd104d;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    margin-right: 4%;
+    display: none;
+}
+
+.logo img {
+    width: 150px;
+    filter: invert(1);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 20px;
+    padding: 8px 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.103);
+    scale: calc(1.05);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.852);
+}
+
+.head-content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.head-content .head-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: cyan; */
+    height: 25rem;
+    width: 25rem;
+    margin: 5% 0 0 10%;
+}
+
+.head-content .head-left h3 {
+    display: inline;
+    border-top: 4px solid #cd104d;
+    font-size: 28px;
+}
+
+.head-content .head-left h2 {
+    font-size: 48px;
+}
+
+.head-content .head-left span {
+    text-decoration: underline;
+    color: #cd104d;
+    font-size: 48px;
+}
+
+.head-content .head-left button {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #cd104d;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+}
+
+.head-content .head-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    margin-right: 15%;
+}
+
+.head-content .head-right img {
+    width: 400px;
+}
+
+.head-content button:hover {
+    scale: calc(1.05);
+    cursor: pointer;
+    background-color: #bb033d;
+}
+
+/* ---About CSS--- */
+
+.about {
+    background-color: #d9d9d9;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .left-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2% 0 0 10%;
+    height: 15rem;
+    width: 20rem;
+    /* background-color: #fff; */
+}
+
+.about .right-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 10% 0 0;
+    height: 18rem;
+    width: 40rem;
+    font-size: 18px;
+    /* background-color: #fff; */
+}
+
+.about .left-about img {
+    padding-bottom: 4px;
+    border-bottom: 4px solid black;
+}
+
+/* ---Services--- */
+
+.services {
+    height: 35rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.services .services-head {
+    min-width: 600px;
+}
+
+.services-head::after {
+    content: "What I Do";
+    display: block;
+    margin: 2%;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.services h1 {
+    font-size: 60px;
+    color: white;
+    -webkit-text-stroke: 0.5px #cd104d;
+}
+
+.services img {
+    border-bottom: 4px solid black;
+    padding-bottom: 4px;
+}
+
+.services .card-items {
+    display: flex;
+    justify-content: space-around;
+    height: 15rem;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 360px;
+    margin-bottom: 2%;
+    transition: 0.5s;
+}
+
+.item-1:hover,.item-2:hover,.item-3:hover{
+    scale: calc(1.05);
+    box-shadow: 2px 3px 10px #b3b3b3;
+}
+
+/* ---Tagline--- */
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+.tagline span {
+    color: black;
+    -webkit-text-stroke: 0.5px #cd104d;
+}
+
+/* ---Fun Facts--- */
+
+.fun-facts {
+    display: flex;
+    height: 25rem;
+    background-color: black;
+    color: white;
+}
+
+.fun-facts img {
+    height: 25rem;
+}
+
+.fun-facts .fun-facts-right {
+    border-top: 2px solid rgba(255, 255, 255, 0.256);
+    padding-left: 5%;
+}
+
+.fun-facts .fun-facts-right h3 {
+    display: inline-block;
+    margin-top: 5%;
+    border-bottom: 4px solid #cd104d;
+}
+
+.fun-facts .fun-facts-right h2 {
+    margin-top: 2%;
+    font-size: 48px;
+}
+
+.fun-facts .fun-facts-right p {
+    margin-top: 5%;
+}
+
+/* ---Contact--- */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30rem;
+    background-color: #d9d9d9;
+}
+
+.contact .contact-left {
+    width: 20rem;
+}
+
+.contact .contact-left h3 {
+    display: inline-block;
+    border-bottom: 4px solid #cd104d;
+}
+
+.contact .contact-left h2 {
+    margin-top: 4%;
+    font-size: 48px;
+}
+
+.contact .contact-left .contact-details {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10%;
+}
+
+.contact .contact-left .contact-icons {
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact .contact-left .contact-icons i {
+    scale: calc(1.5);
+}
+
+.contact .contact-left .contact-icon-text {
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact .contact-left .contact-icon-text p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact .contact-left .contact-icon-text span {
+    display: block;
+    color: rgba(0, 0, 0, 0.799);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.contact .contact-right {
+    background-color: #d9d9d9;
+    border-radius: 4px;
+    box-shadow: 0 0 10px gray;
+    padding: 2% 2%;
+}
+
+.contact .contact-right form {
+    max-width: 650px;
+}
+
+.contact .contact-right input {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact .contact-right .name,
+.email {
+    margin: 1% 2%;
+    padding: 2% 14% 2% 2%;
+}
+
+.contact .contact-right .subject {
+    margin: 1% 2%;
+    padding: 2% 60% 2% 2%;
+}
+
+.contact .contact-right .text {
+    margin: 1% 2%;
+    border: none;
+    border-radius: 4px;
+    width: 35.5rem;
+    height: 8rem;
+    padding: 2% 0 0 2%;
+}
+
+.contact .contact-right .submit {
+    margin: 1% 2%;
+    padding: 2% 2% 2% 2%;
+    background-color: #cd104d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact .contact-right .submit:hover {
+    background-color: #bc033e;
+}
+
+/* ---footer--- */
+
+.footer {
+    background-color: #1a1919;
+    height: 20rem;
+    color: #b3b3b3;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .col {
+    max-width: 450px;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.footer .col li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.footer .col h2 {
+    color: white;
+    padding-bottom: 10%;
+}
+
+.footer .col p {
+    font-size: 20px;
+    position: relative;
+}
+.footer .col p span {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d9d9d9;
+    padding-top: 4%;
+}
+
+.footer .col p::before{
+    content: "\201C";
+    color: #cd104d;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+/* ---Copyright--- */
+
+.copyright {
+    height: 5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright p {
+    margin-left: 5%;
+}
+
+.socials {
+    margin-right: 5%;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/* --Responsiveness-- */
+
+@media screen and (max-width: 1224px) {
+    .about {
+        gap: 6em;
+    }
+
+    .fun-facts .fun-facts-right h2 {
+        font-size: 36px;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .head-content .head-left {
+        width: 22rem;
+    }
+
+    .head-content .head-left h3 {
+        font-size: 24px;
+    }
+
+    .head-content .head-left h2 {
+        font-size: 36px;
+    }
+
+    .head-content .head-right img {
+        width: 350px;
+    }
+
+    .tagline{
+        font-size: 36px;
+    }
+
+    .fun-facts {
+        height: 18rem;
+    }
+
+    .fun-facts .fun-facts-left img {
+        height: 18rem;
+    }
+
+    .fun-facts .fun-facts-right h2 {
+        font-size: 22px;
+        margin-top: 4%;
+    }
+
+    .contact .contact-right form {
+        max-width: 450px;
+    }
+
+    .contact .contact-right .name,
+    .email {
+        padding-right: 6%;
+    }
+
+    .contact .contact-right .subject {
+        padding-right: 56%;
+    }
+
+    .contact .contact-right .text {
+        width: 26.5rem;
+        height: 8rem;
+        padding: 2% 0 0 2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav #list {
+        position: absolute;
+        flex-direction: column;
+        top: 0%;
+        width: 100%;
+        background-color: rgb(66, 66, 66);
+        padding-top: 4rem;
+        display: none;
+    }
+    .myBtn{
+        display: block;
+        border: none;
+        z-index: 10;
+    }
+    .about .left-about{
+        width: 45rem;
+    }
+    .about .right-about{
+        font-size: 14px;
+        margin-top: 3%;
+    }
+    .fun-facts{
+        height: 15rem;
+    }
+    .fun-facts .fun-facts-left img{
+        height: 15rem;
+    }
+    .fun-facts .fun-facts-right h2{
+        margin-top: 3%;
+    }
+    .fun-facts .fun-facts-right p{
+        font-size: 14px;
+        margin-top: 3%;
+    }
+    .contact .contact-left {
+        width: 11rem;
+    }
+    .contact .contact-left h2{
+        font-size: 36px;
+    }
+    .footer .col{
+        max-width: 270px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .header{
+        height: 45rem;
+    }
+    .head-content .head-right img{
+        width: 250px;
+    }
+    .logo img {
+        width: 90px;
+    }
+    .head-content{
+        flex-direction: column;
+    }
+    .head-content p{
+        font-size: 12px;
+        padding-right: 6rem;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 23rem;
+    }
+    .about .left-about{
+        width: 15rem;
+        height: 12rem;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .about .left-about *{
+        padding-top: 5%;
+    }
+    .about .left-about h2{
+        font-size: 16px;
+    }
+    .about .left-about img{
+        width: 48px;
+    }
+    .about .right-about{
+        margin: 0;
+        padding: 0;
+        width: 18rem;
+        text-align: center;
+        font-size: 10px;
+        height: 0rem;
+    }
+    .services{
+        height: 56rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .services .services-head{
+        min-width: 100%;
+        min-height: 24rem;
+    }
+    .services img{
+        width: 48px;
+        margin-top: 2rem;
+    }
+    .services-head::after{
+        font-size: 28px;
+    }
+    .services .card-items{
+        flex-direction: column;
+    }
+    .services .card-items{
+        height: 20rem;
+    }
+    .item-1, .item-2, .item-3{
+        max-width: 250px;
+        margin-bottom: 10%;
+    }
+    .tagline{
+        height: 4rem;
+        font-size: 16px;
+    }
+    .fun-facts{
+        height: 31.5rem;
+        flex-direction: column;
+    }
+    .fun-facts img{
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+        height: 48rem;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+    .contact .contact-right form {
+        max-width: 260px;
+    }
+    .contact .contact-right .name, .email {
+        width: 15rem;
+    }
+    .contact .contact-right .subject {
+        padding-right: 0;
+        width: 15rem;
+    }
+    .contact .contact-right .text {
+        width: 15rem;
+        height: 8rem;
+    }
+    .footer{
+        height: 25rem;
+    }
+    .footer .row{
+        flex-direction: column;
+        padding-left: 6%;
+    }
+    .footer .col h2 {
+        color: white;
+        padding-bottom: 5%;
+        font-size: 16px;
+    }
+    .footer .col ul{
+        font-size: 11px;
+    }
+    .footer .col p{
+        font-size: 11px;
+    }
+    .footer .col p span {
+        font-size: 8px;
+    }
+    .copyright {
+        height: 3rem;
+    }    
+    .copyright p{
+        font-size: 12px;
+    }    
+}

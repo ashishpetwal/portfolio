@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <img src="images\Logo.svg" alt="" />
+        </div>
+        <ul id="list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
+        <button onclick="handleClick()" class="myBtn">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </nav>
+      <div class="head-content">
+        <div class="head-left">
+          <div><h3>Ashish Petwal</h3></div>
+          <div>
+            <h2>Creative Web</h2>
+            <span><h2>Designer</h2></span>
+          </div>
+          <div>
+            <p>
+              If you want to have a portfolio website like this, just put a
+              click the button below...
+            </p>
+          </div>
+          <div><button>CONTACT US <i class="fa-solid fa-arrow-right"></i></button></div>
+        </div>
+        <div class="head-right">
+          <img src="images\webdev.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="left-about">
+        <div>
+          <img src="images\about.svg" alt="" />
+          <h4>About Us</h4>
+        </div>
+        <div>
+          <h2>
+            Global Network of Talent thats changing the world creatively...
+          </h2>
+        </div>
+      </div>
+      <div class="right-about">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
+          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+          mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
+          tellus. <br><br>Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
+          suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at
+          maximus ante.
+        </p>
+      </div>
+    </div>
+    <div class="services">
+        <div class="services-head">
+            <img src="images\about.svg" alt="">
+            <h4>Services</h4>
+            <!-- <h1>What I Do</h1> -->
+        </div>
+        <div class="card-items">
+            <div class="item-1">
+                <h1>01</h1>
+                <h2>Web Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, culpa!</p>
+            </div>
+            <div class="item-2">
+                <h1>02</h1>
+                <h2>Web Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, culpa!</p>
+            </div>
+            <div class="item-3">
+                <h1>03</h1>
+                <h2>Web Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, culpa!</p>
+            </div>
+        </div>
+    </div>
+    <div class="tagline">
+        <h1>Let's Wor<span>k Together</span></h1>
+    </div>
+    <div class="fun-facts">
+      <div class="fun-facts-left">
+        <img src="images\fun-fact.jpg" alt="">
+      </div>
+      <div class="fun-facts-right">
+        <h3>Fun Facts</h3>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quidem fugit ex! Ullam qui beatae ea quaerat rem commodi. Molestias minima ad molestiae est nulla.</p>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="contact-left">
+        <h3>Contact Me</h3>
+        <h2>Let's Talk</h2>
+        <div class="contact-details">
+          <div class="contact-icons">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-icon-text">
+            <p>Phone Number<span>+1 234-567-890</span></p>
+            <p>Get in Touch<span>16-A Miranda Tower, NYC, USA</span></p>
+            <p>Email Address<span>yourmail@gmail.com</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form>
+              <input type="text" placeholder="Your Name" class="name" required>
+              <input type="email" placeholder="Your Email" class="email" required>
+              <input type="text" placeholder="Subject" class="subject" required>
+              <textarea type="text" class="text" placeholder="Your Message..." required></textarea>
+              <input type="submit" class="submit" value="Get a Quote">
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col">
+          <h2>Get in Touch</h2>
+          <ul>
+            <li><a href="#">yourmail@gmail.com</a></li>
+            <li><a href="#">www.linkedin.com/username</a></li>
+            <li><a href="#">16-A, New York, USA</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>More Pages</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Random Quote</h2>
+          <p><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, nobis?<span>- Ralph Waldo Emerson</span></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Developed by Ashish Petwal &#10084;</p>
+      <div class="socials">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
