@@ -29,7 +29,6 @@ nav {
 
 .logo img {
     width: 150px;
-    filter: invert(1);
 }
 
 nav ul {
@@ -83,9 +82,45 @@ nav ul li a {
 }
 
 .head-content .head-left span {
+    display: inline-block;
     text-decoration: underline;
     color: #cd104d;
     font-size: 48px;
+    overflow: hidden;
+    border-right: 0.15em solid #cd104d;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation: 
+        typing 7.5s steps(40,end) infinite,
+        blinking .75s step-end infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    70%{
+        width: 75%;
+    }
+    90%{
+        width: 30%;
+    }
+    to{
+        width: 0%;
+    }
+}
+
+@keyframes blinking {
+    from{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #cd104d;
+    }
+    to{
+        border-color: transparent;
+    }
 }
 
 .head-content .head-left button {
